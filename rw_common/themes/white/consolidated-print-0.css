@@ -1,0 +1,134 @@
+/* A list of dividers and elements we do not want printed */
+#banner, #nav1, #nav2, #siteSearch, #pluginSidebar, #footerTitle, #breadcrumb  {
+	display: none;
+}
+
+/* Reduce title and slogan font size down and stack vertically */
+
+#header,
+#siteTitle h1,
+#siteSlogan h2 {
+	display: block;
+	position: relative;
+	height: auto;
+	font-size: 12pt;
+}
+
+/* Makes text printer friendly and uses "Eco Sans" font face when available */
+#container, #wrapper, #content {
+	width: 100%; 
+	margin-right: 200px; 
+	float: none;
+	font: 12pt/1.3em "Spranq eco sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* Floats the sidebar right and wraps it inside a box */
+#aside {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	float: right;
+	width: 180px;
+	border: 1px dashed #cccccc;
+	overflow: hidden;
+	font: 12pt/1.3em "Spranq eco sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* Reduces sidebar title size */
+#aside #sidebarTitle h3 {
+	line-height: 1.00em;
+	font-size: 12pt;
+	padding: 0;
+	margin: 0;
+}
+
+/* Makes all links blue */
+a, 
+a:visited {
+	color: #0000ff;
+}
+
+/* Prints URL's after links */
+a:link:after,
+a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 90%;
+}
+
+/* Puts some padding above the footer */
+#footer {
+	padding-top: 20px;
+}
+body {
+	background: #FFFFFF;
+	color: #545454;
+}
+
+#siteTitle h1 a {
+	color: #969696;
+}
+
+#siteTitle h1 a:hover {
+	color: #969696;
+}
+
+#siteSlogan h2 {
+	color: #4C4C4C;
+}
+
+a:link {
+	color: #0066CC;
+}
+
+a:visited {
+	color: #800040;
+}
+
+a:hover {
+	color: #0066CC;
+}
+
+a:active {
+	color: #0066CC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4C4C4C;
+}
+
+
+		/* @option user-selected sidebar position setting */
+
+#contentContainer #content {	
+	margin-right: 240px;
+	margin-left: 0px;
+}
+
+#aside {
+	float: right;
+	width: 200px;
+}
+
+/* @option user-selected theme width setting */
+
+#main,
+.widthWrapper {
+	width: 780px;
+}
+
+/* @option user-selected misc. theme setting */
+
+#lastUpdated {
+	display: block;
+}
+
+/* @option user-selected misc. theme setting */
+
+#banner {
+	box-shadow: 7px 7px 8px #666666;
+	-webkit-box-shadow: 7px 7px 8px #666666;
+	-moz-box-shadow: 7px 7px 8px #666666;
+}
+
+
+		
